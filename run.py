@@ -22,6 +22,9 @@ uri = "mongodb+srv://arundanabalan94:lXFJWoxS6hs60NQr@cluster0.bawls55.mongodb.n
 mongo = MongoClient(uri)
 db = mongo['arun'] 
 
+@app.route('/', methods=['GET'])
+def emety():
+    return f'serevr is running'
 @app.route('/register', methods=['POST'])
 def create_user():
     try:
