@@ -24,7 +24,7 @@ db = mongo['arun']
 
 @app.route('/', methods=['GET'])
 def emety():
-    return f'Serevr is running'
+    return f'Server is running'
 @app.route('/register', methods=['POST'])
 def create_user():
     try:
